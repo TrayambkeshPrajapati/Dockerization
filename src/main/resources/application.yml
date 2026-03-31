@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: ToDoApp
+  data:
+    mongodb:
+      uri: ${SPRING_DATA_MONGODB_URI:mongodb://localhost:27017/todo_db}
+server:
+  port: ${PORT:8080}
+frontend:
+  url: ${FRONTEND_URL:http://localhost:5173}
